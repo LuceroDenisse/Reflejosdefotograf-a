@@ -1,0 +1,284 @@
+:root {
+    --color-negro: #1A1A1A;    
+    --color-rosa: pink;   
+    --color-blanco:#ffff; 
+    --color-gris: #808080; 
+    --colorm:#cdb4db;        
+}
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-rosa);
+    text-align: center;
+    color: var(--color-negro);
+    transition: background-color 0.5s;
+}
+img{
+    width: 100px;
+    height: 350px;
+    height: auto;
+    display: block;
+    margin: 0  auto;
+}
+.titulo {
+    position: absolute; 
+    top: 10%; 
+    left: 50%;
+    text-align: right;
+    transform: translate(-50%, -10%); 
+    font-size: 5vw;
+    color: var(--color-blanco);
+    padding: 10px;
+    font-family: "playfair display";
+    font-style: italic;
+    opacity: 0;
+    animation: entrada 1s forwards;
+}
+@keyframes entrada {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -10%); 
+    }
+}
+nav {
+    display: flex;
+    gap: 20px;
+    background-color: var(--color-gris);
+    padding:  15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.menu {
+    text-decoration: none;
+    font-size: 20px;
+    color:var(--colorr); /* Color blanco por defecto */
+    padding: 10px;
+}
+.menu.active {
+    color: var(--colorm); /* Color del enlace activo */
+    font-weight: bold;
+}
+.servicios{
+    font-style: italic;
+    color: var(--color-blanco);
+    animation: movimiento 2s infinite;
+}
+@keyframes movimiento{
+    0%{ transform: translateY(0);}
+    50%{transform: translateY(-10%);}
+    100%{transform: translateY(0)}
+}
+.cont{
+    padding: 3rem;
+    background: var(--colorm);
+    text-align: center;
+}
+.cont1{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 2rem;
+}
+.cont2{
+    background: var(--color-blanco);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px var(--color-negro);
+    overflow: hidden;
+    text-align: center;
+    transition: trasform 0.3s;
+    color: var(--color-rosa);
+}
+.cont2:hover{
+    transform: scale(1.05);
+}
+.cont2 img{
+    width: 100%;
+    height: auto;
+}
+.titulo2{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 16px;
+    color: var(--color-negro);
+    font-style: italic;
+}
+.texto {
+    text-align: center; 
+    font-size: 36px; 
+    font-weight: bold; 
+}
+.texto3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--colorm);
+    color:var(--color-blanco);
+    padding: 50px;
+}
+.contenido {
+    width: 50%;
+}
+.contenido p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+.imagen {
+    width: 40%;
+}
+.imagen img {
+    width: 200px;
+    height: 250px;
+    border-radius: 10px;
+}
+.porque-comprar {
+    text-align: center;
+    background-color: var(--colorm);
+    color: var(--color-blanco);
+    padding: 50px 20px;
+}
+.textoh2{
+    color: var(--color-negro);
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    gap: 10px; /* Espacio reducido entre cuadros */
+    justify-content: center; /* Centra el contenido */
+    align-items: center; /* Alinea verticalmente */
+}
+.beneficio {
+    /* background: var(--color-blanco); */
+    color: var(--color-negro);
+    padding: 15px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px var(--color-gris); */
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.beneficio img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 15px;
+}
+.sub{
+    color: var(--colorm);
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.textos{
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.contenedor2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: var(--color-rosa);
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+
+}
+@keyframes revealImage {
+    0% {
+        clip-path: inset(100% 0 0 0); /* Oculta toda la imagen */
+        opacity: 0;
+    }
+    25% {
+        clip-path: inset(75% 0 0 0); /* Muestra el 25% superior */
+        opacity: 0.3;
+    }
+    50% {
+        clip-path: inset(50% 0 0 0); /* Muestra la mitad superior */
+        opacity: 0.6;
+    }
+    75% {
+        clip-path: inset(25% 0 0 0); /* Muestra el 75% de la imagen */
+        opacity: 0.8;
+    }
+    100% {
+        clip-path: inset(0 0 0 0); /* Imagen completamente visible */
+        opacity: 1;
+    }
+}
+.imagen-producto {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    /* Aplicamos la animación */
+    animation: revealImage 2s ease-out forwards;
+}
+/* Estilos del Texto */
+.texto1 {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+/* Estilos del Formulario */
+#product-form {
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--color-negro);
+    text-align: left;
+}
+.form-grup {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+select, input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--colorm);
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    background-color: var(--color-gris);
+    color: var(--color-negro);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+button:hover {
+    background-color: var(--color-gris);
+}
+/* Laptop:*/
+@media (min-width: 1024px) {
+    .cont1 {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/* Tablet:  */
+@media (min-width: 600px) and (max-width: 1023px) {
+    .cont1 {
+        grid-template-columns: repeat(2fr,1fr);
+    }
+    .cont2{
+        grid-template-columns: repeat(2fr,1fr);
+    }
+}
+/* Celular:  */
+@media (max-width: 300px) and (max-width:599px){
+    .cont1 {
+        grid-template-columns: repeat(1fr,1fr);
+    }
+    .cont2{
+        grid-template-columns: repeat(1fr,1fr);
+    }
+}

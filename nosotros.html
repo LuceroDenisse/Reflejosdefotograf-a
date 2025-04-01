@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <img src="IMG/img26.jpeg" alt="" style="width: 100%;">
+    <div class="titulo">REFLEJOS DE FOTOGRAFÍA</div>
+<nav>
+    <a href="index.html" class="menu">Tienda</a>
+    <a href="nosotros.html" class="menu">Nosotros</a>
+</nav>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Obtener el nombre del archivo de la URL actual
+        let currentPage = window.location.pathname.split("/").pop();
+
+        // Seleccionar todos los enlaces del menú
+        let links = document.querySelectorAll(".menu");
+
+        links.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+<section class="nosotros">
+    <div class="contenido">
+        <h1 class="servicios">Nosotros</h1>
+    
+        <p>Desde el inicio, nos hemos dedicado a ofrecer productos de calidad para desarrolladores y entusiastas de la tecnología. Creemos en la innovación y la accesibilidad, brindando siempre los mejores precios y un servicio excepcional.</p>
+        <p>Nos especializamos en productos pensados para tech lovers, garantizando calidad, buen precio y envíos rápidos.</p>
+    </div>
+    <div class="imagen">
+        <img src="IMG/camara.jpg" alt="Persona">
+    </div>
+</section>
+<section class="porque-comprar">
+    <h2 class="textoh2">¿Por qué comprar con nosotros?</h2>
+    <div class="beneficios">
+        <div class="beneficio">
+            <img src="IMG/img41.png" alt="Mejor Precio">
+            <h3 class="sub">El Mejor Precio</h3>
+            <p class="textos">Ofrecemos los precios más competitivos del mercado sin comprometer la calidad.</p>
+        </div>
+        <div class="beneficio">
+            <img src="IMG/img38.png" alt="Para Devs">
+            <h3 class="sub">Para Devs</h3>
+            <p class="textos">Productos pensados especialmente para desarrolladores y entusiastas de la tecnología.</p>
+        </div>
+        <div class="beneficio">
+            <img src="IMG/img39.png" alt="Envío Gratis">
+            <h3 class="sub">Envío Gratis</h3>
+            <p class="textos">Recibe tu pedido sin costo adicional en compras seleccionadas.</p>
+        </div>
+        <div class="beneficio">
+            <img src="IMG/img40.png" alt="La Mejor Calidad">
+            <h3 class="sub">La Mejor Calidad</h3>
+            <p class="textos">Garantizamos productos de alta calidad y durabilidad.</p>
+        </div>
+    </div>
+</section>
+<nav>
+    <p class="texto2">
+          "Reflejos:dónde la realidad se encuentra con la ilusión"-2025
+    </p>
+</nav>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflejos de fotografía</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+        <img src="IMG/img26.jpeg" alt="" style="width: 100%;">
+        <div class="titulo">REFLEJOS DE FOTOGRAFÍA</div>
+    <nav>
+        <a href="index.html" class="menu">Tienda</a>
+        <a href="nosotros.html" class="menu">Nosotros</a>
+    </nav>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentPage = window.location.pathname.split("/").pop();
+
+        let links = document.querySelectorAll(".menu");
+
+        links.forEach(link => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    });
+</script>
+    <h1 class="servicios">SECCIONES DE FOTOS</h1>
+
+    <section id="servicios" class="cont">
+
+        <div class="cont1">
+            <div class="cont2">
+                <a href="fotosdebb.html">
+                    <img src="img/img31.jpeg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos para bebés</h2>
+                <p class="texto">$3500</p>
+            </div>
+
+            <div class="cont2">
+                <a href="fotosfamily.html">
+                    <img src="img/img29.jpg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos familiares</h2>
+                <p class="texto">$4500</p>
+            </div>
+
+            <div class="cont2">
+                <a href="fotosXV.html">
+                    <img src="img/img24.jpeg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos para XV</h2>
+                <p class="texto">$7000</p>
+            </div>
+
+            <div class="cont2">
+                <a href="cump.html">
+                    <img src="img/img28.jpeg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos para cumpleaños</h2>
+                <p class="texto">$2500</p>
+            </div>
+
+            <div class="cont2">
+                <a href="ret.html">
+                    <img src="img/retrato1.jpg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Headshots(retratos)</h2>
+                <p class="texto">$1500</p>
+            </div>
+
+            <div class="cont2">
+                <a href="amig.html">
+                    <img src="img/amigo1.jpg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos de amigo@s</h2>
+                <p class="texto">$850</p>
+            </div>
+
+            <div class="cont2">
+                <a href="par.html">
+                    <img src="img/amigos.jpeg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos de pareja</h2>
+                <p class="texto">$1500</p>
+            </div>
+
+            <div class="cont2">
+                <a href="emb.html">
+                    <img src="img/img30.jpeg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos para parejas embarazadas</h2>
+                <p class="texto">$3500</p>
+            </div>
+
+            <div class="cont2">
+                <a href="gra.html">
+                    <img src="img/grad1.jpeg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos de graduación</h2>
+                <p class="texto">$2500</p>
+            </div>
+
+            <div class="cont2">
+                <a href="dep.html">
+                    <img src="img/dep2.jpg" alt="" style="width: 300px; height: auto;">
+                </a>
+                <h2 class="titulo2">Sección de fotos de deportes</h2>
+                <p class="texto">$2500</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <nav>
+        <p class="texto2">
+              "Reflejos:donde la realidad se encuentra con la ilusion"-2025
+        </p>
+    </nav>
+</body>
+</html>
